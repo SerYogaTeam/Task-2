@@ -5,7 +5,7 @@ import java.io.FileReader;
 public class MainClass {
     public static void main(String[] args) {
         try {
-            File file = new File("C:\\Tests\\Task 2.1\\Txt.txt");
+            File file = new File(System.getProperty("user.dir") + "\\Txt.txt");
             FileReader fileReader = new FileReader(file);
             BufferedReader reader = new BufferedReader(fileReader);
 
